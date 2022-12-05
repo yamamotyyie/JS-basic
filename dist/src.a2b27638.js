@@ -182,6 +182,36 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 // sayHello("とーふ");
 
 // スプレット構文
+// ...を連続で書く
+// 配列の展開
+// const arr1 = [1,2];
+// // console.log(arr1);
+// // console.log(...arr1);
+
+// const sumFunc = (num1,num2)=>console.log(num1+num2);
+// sumFunc(arr1[0],arr1[1]);
+// sumFunc(...arr1);
+// 配列に対して使ってる。順番を変換
+
+// 一つにまとめる
+// const arr2 = [1,2,3,4,5];
+// const [num1,num2,...arr3]=arr2;
+// console.log(num1);
+// console.log(num2);
+// console.log(arr3);
+
+// 配列のコピー、結合
+var arr4 = [10, 20];
+var arr5 = [30, 40];
+
+// const arr6 = [...arr4];
+// console.log(arr6);
+
+// const arr7 = [...arr4,...arr5];
+// console.log(arr7);
+
+var arr8 = arr4;
+console.log(arr8);
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
