@@ -99,6 +99,8 @@ const nameArr = ["田中", "山田", "とーふ"];
 // for (let i = 0;nameArr;index<nameArr.length++){
 //     console.log(nameArr[index]);
 // }
-const nameArr2 = nameArr.map((name)=>{
-    return name;
-})
+// const nameArr2 = nameArr.map((name)=>{
+//     return name;
+// })
+// nameArr.map((name)=>console.log(name));
+
