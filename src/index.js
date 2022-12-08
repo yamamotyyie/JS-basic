@@ -95,9 +95,10 @@
 
 // mapやfilterを使った処理
 const nameArr = ["田中", "山田", "とーふ"];
+
 // for文
-// for (let i = 0;nameArr;index<nameArr.length++){
-//     console.log(nameArr[index]);
+// for (let i = 0; i < nameArr.length; i++) {
+//   console.log(`${i + 1}番目は${nameArr[i]}です`);
 // }
 // const nameArr2 = nameArr.map((name)=>{
 //     return name;
@@ -105,8 +106,17 @@ const nameArr = ["田中", "山田", "とーふ"];
 // nameArr.map((name)=>console.log(name));
 
 // ある条件に一致したものを返却し、新しい配列を生成する。filter
-const numArr = [1,2,3,4,5];
-const newNumArr = numArr.filter((num)=>{
-    return num % 2 ===1;
-});
-console.log(newNumArr);
+// const numArr = [1,2,3,4,5];
+// const newNumArr = numArr.filter((num)=>{
+//     return num % 2 ===1;
+// });
+// console.log(newNumArr);
+
+const newNameArr = nameArr.map((name)=>{
+    if (name ==="とーふ"){
+        return name
+    }else {
+        return `${name}さん`
+    }
+})
+console.log(newNameArr);
