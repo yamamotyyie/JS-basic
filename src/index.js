@@ -80,15 +80,25 @@
 // console.log(num2);
 // console.log(arr3);
 
-// 配列のコピー、結合
-const arr4 = [10, 20];
-const arr5 = [30, 40];
+// // 配列のコピー、結合
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
 
-// const arr6 = [...arr4];
-// console.log(arr6);
+// // const arr6 = [...arr4];
+// // console.log(arr6);
 
-// const arr7 = [...arr4,...arr5];
-// console.log(arr7);
+// // const arr7 = [...arr4,...arr5];
+// // console.log(arr7);
 
-const arr8 = arr4;
-console.log(arr8);
+// const arr8 = arr4;
+// console.log(arr8);
+
+// mapやfilterを使った処理
+const nameArr = ["田中", "山田", "とーふ"];
+// for文
+// for (let i = 0;nameArr;index<nameArr.length++){
+//     console.log(nameArr[index]);
+// }
+const nameArr2 = nameArr.map((name)=>{
+    return name;
+})
