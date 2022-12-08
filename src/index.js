@@ -104,3 +104,9 @@ const nameArr = ["田中", "山田", "とーふ"];
 // })
 // nameArr.map((name)=>console.log(name));
 
+// ある条件に一致したものを返却し、新しい配列を生成する。filter
+const numArr = [1,2,3,4,5];
+const newNumArr = numArr.filter((num)=>{
+    return num % 2 ===1;
+});
+console.log(newNumArr);
